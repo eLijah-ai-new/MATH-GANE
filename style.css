@@ -1,0 +1,17 @@
+body {
+  text-align: center;
+  background-color: rgb(251, 252, 251);
+}
+
+.my-btn {
+  background-color: #A4B465;
+  margin: auto;
+  padding: 2% 5%;
+  border: 30%;
+  cursor: pointer;
+  border-radius: 3%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+.my-btn:hover {
+  background-color:#626F47 ;
+}
