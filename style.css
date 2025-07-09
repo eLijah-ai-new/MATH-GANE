@@ -1,6 +1,9 @@
 body {
   text-align: center;
-  background-color: rgb(251, 252, 251);
+  background-image: url("./download.jpg");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
 }
 
 .my-btn {
