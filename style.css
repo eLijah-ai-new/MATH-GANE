@@ -1,4 +1,4 @@
-html, body {
+/* html, body {
   height: 100%;
   text-align: center;
   background-image: url("./olive\ green\ background.png");
@@ -6,7 +6,39 @@ html, body {
   background-size: cover;
   background-position: center;
 }
-/* Hi Elijah */
+
+.my-btn {
+  background-color: #A4B465;
+  margin: auto;
+  padding: 2% 5%;
+  border: 30%;
+  cursor: pointer;
+  border-radius: 3%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+.my-btn:hover {
+  background-color:#ffffff ;
+} */
+
+html, body {
+  height: 100%;
+  text-align: center;
+  background-color: #5d7308;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+#btnDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .my-btn {
   background-color: #A4B465;
   margin: auto;
@@ -20,3 +52,8 @@ html, body {
   background-color:#ffffff ;
 }
 
+@media screen and (max-width: 620px){
+  h1 {
+    background-color: red;
+  }
+}
