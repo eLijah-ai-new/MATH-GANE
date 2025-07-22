@@ -6,8 +6,11 @@
   background-size: cover;
   background-position: center;
 }
+h1{
+  font-size: 3rem;
+}
 
-.my-btn {
+.page1-btn {
   background-color: #A4B465;
   margin: auto;
   padding: 2% 5%;
@@ -18,4 +21,8 @@
 .page1-btn:hover {
   background-color: #3E5F44;
 }
-
+#btnDiv{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
