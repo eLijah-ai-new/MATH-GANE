@@ -3,14 +3,33 @@
 <head>
   <title>Home Page</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .subjectDisplay {
+      display: none;
+    }
+  </style>
 </head>
 <body>
-<div id="home">
+<div id="homeScreen">
 <h1>Choose Your Subject</h1>
-
-<button class="my-btn">English</button>
-<button class="my-btn">History</button>
-<button class="my-btn">Science</button>
+<div id="btnDiv">
+<button class="page1-btn" onclick="myPage('english-page')">English</button>
+<button class="page1-btn" onclick="myPage('history-page')">History</button>
+<button class="page1-btn" onclick="myPage('science-page')">Science</button>
 </div>
+</div>
+
+<div id="english-page" class="subjectDisplay">
+  <h2>Welcome to English</h2>
+</div>
+
+<div id="history-page" class="subjectDisplay">
+  <h2>Welcome to History </h2>
+</div>
+
+<div id="science-page" class="subjectDisplay">
+  <h2>Welcome to Science</h2>
+</div>
+
 </body>
 </html> 

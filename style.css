@@ -1,22 +1,30 @@
 html, body {
   height: 100%;
   text-align: center;
-  background-image: url("./olive\ green\ background.png");
+  background-color: #93DA97;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-/* Hi Elijah */
-.my-btn {
-  background-color: #A4B465;
+
+h1{
+  font-size: 3rem;
+}
+
+#btnDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.page1-btn {
+  background-color: #5E936C;
   margin: auto;
   padding: 2% 5%;
-  border: 30%;
   cursor: pointer;
   border-radius: 3%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 } 
-.my-btn:hover {
-  background-color:#ffffff ;
+.page1-btn:hover {
+  background-color: #3E5F44;
 }
-
