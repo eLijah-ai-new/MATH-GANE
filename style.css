@@ -1,4 +1,4 @@
-html, body {
+ html, body {
   height: 100%;
   text-align: center;
   background-color: #93DA97;
@@ -7,18 +7,8 @@ html, body {
   background-position: center;
 }
 
-h1{
-  font-size: 3rem;
-}
-
-#btnDiv{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.page1-btn {
-  background-color: #5E936C;
+.my-btn {
+  background-color: #A4B465;
   margin: auto;
   padding: 2% 5%;
   cursor: pointer;
@@ -28,3 +18,4 @@ h1{
 .page1-btn:hover {
   background-color: #3E5F44;
 }
+
