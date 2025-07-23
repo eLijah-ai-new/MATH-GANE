@@ -2,33 +2,54 @@
 <html>
 <head>
   <title>Home Page</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
-  <style>
-    .subjectDisplay {
-      display: none;
-    }
-  </style>
+
 </head>
 <body>
-<div id="homeScreen">
+<div id="homeScreen" class="hidden">
 <h1>Choose Your Subject</h1>
 <div id="btnDiv">
-<button class="page1-btn" onclick="myPage('english-page')">English</button>
-<button class="page1-btn" onclick="myPage('history-page')">History</button>
-<button class="page1-btn" onclick="myPage('science-page')">Science</button>
+<button class="page1-btn" >English</button>
+<button class="page1-btn" >History</button>
+<button class="page1-btn" >Science</button>
 </div>
 </div>
 
-<div id="english-page" class="subjectDisplay">
-  <h2>Welcome to English</h2>
+<div id="quizzScreen" >
+  <div id="topRow">
+  <p id="qCount">1/5</p>
+ <h2>Welcome to Subject</h2>
+ <p id="scoreDisplay">Score: 0</p>
+  </div>
+
+  <div id="questionCard">
+    <p id="currentQuestion"> This is a dummy question.</p>
+    <div id="radioDiv">
+      <label for="r1">Dummy1</label>
+      <input type="radio" id="r1" class="qRadio" name="answerOption" value="Dummy1">
+
+            <label for="r2">Dummy2</label>
+      <input type="radio" id="r2" name="answerOption" class="qRadio" value="Dummy2">
+
+            <label for="r3">Dummy2</label>
+      <input type="radio" id="r3" class="qRadio" name="answerOption" value="Dummy3">
+    </div>
+    <div id="answerDiv">
+      <p id="answerExplain"> That was correct. The answer is ... because....</p>
+      <a href="https://en.wikipedia.org/wiki/Job_Maseko">Explanation</a>
+      <button id="nxtQuestion">Next</button>
+    </div>
+
+  </div>
+
+
 </div>
 
-<div id="history-page" class="subjectDisplay">
-  <h2>Welcome to History </h2>
+<div id="ScoreBoardScreen" class="hidden">
+
 </div>
 
-<div id="science-page" class="subjectDisplay">
-  <h2>Welcome to Science</h2>
-</div>
 </body>
 </html>
