@@ -17,11 +17,11 @@
 </div>
 </div>
 
-<div id="quizzScreen" >
+<div id="quizzScreen" class="hidden" >
   <div id="topRow">
-  <p id="qCount">1/5</p>
+  <p id="qCount" class="scoreClass">1/5</p>
  <h2>Welcome to Subject</h2>
- <p id="scoreDisplay">Score: 0</p>
+ <p id="scoreDisplay" class="scoreClass">Score: 0</p>
   </div>
 
   <div id="questionCard">
@@ -47,8 +47,21 @@
 
 </div>
 
-<div id="ScoreBoardScreen" class="hidden">
-
+<div id="ScoreBoardScreen" >
+<h1>Your Score:</h1>
+<table id="scoreTbl">
+<th class="border">Question: </th>
+<th >Answer: </th>
+<tr class="correct">
+  <td class="border ">What is the plural of Moose?</td>
+  <td>Mooses</td>
+</tr>
+<tr class="incorrect">
+  <td class="border">What is a verb?</td>
+  <td>It is an action word.</td>
+</tr>
+</table>
+<h2 id="finalScore"> You scored 3 out of 5</h2>
 </div>
 
 </body>
