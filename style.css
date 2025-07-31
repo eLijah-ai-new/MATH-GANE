@@ -83,6 +83,9 @@ h1{
   border: 1vw solid #1a1c1b;
 color: #A4B465;
 background-color: #3E5F44;
+
+ border-collapse: collapse;
+border-spacing: 0;
    
 }
 
