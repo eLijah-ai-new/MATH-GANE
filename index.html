@@ -5,10 +5,10 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
-
+  <script src="./index.js" rel="js" defer></script>
 </head>
 <body>
-<div id="homeScreen" class="hidden">
+<div id="homeScreen" class="">
 <h1>Choose Your Subject</h1>
 <div id="btnDiv">
 <button class="page1-btn" >English</button>
@@ -20,25 +20,25 @@
 <div id="quizzScreen" class="hidden" >
   <div id="topRow">
   <p id="qCount" class="scoreClass">1/5</p>
- <h2>Welcome to Subject</h2>
+ <h2 id="subjectHeading">Welcome to Subject</h2>
  <p id="scoreDisplay" class="scoreClass">Score: 0</p>
   </div>
 
   <div id="questionCard">
     <p id="currentQuestion"> This is a dummy question.</p>
     <div id="radioDiv">
-      <label for="r1">Dummy1</label>
+      <label id="r1l" for="r1">Dummy1</label>
       <input type="radio" id="r1" class="qRadio" name="answerOption" value="Dummy1">
 
-            <label for="r2">Dummy2</label>
+            <label id="r2l" for="r2">Dummy2</label>
       <input type="radio" id="r2" name="answerOption" class="qRadio" value="Dummy2">
 
-            <label for="r3">Dummy2</label>
+            <label id="r3l" for="r3">Dummy2</label>
       <input type="radio" id="r3" class="qRadio" name="answerOption" value="Dummy3">
     </div>
     <div id="answerDiv">
       <p id="answerExplain"> That was correct. The answer is ... because....</p>
-      <a href="https://en.wikipedia.org/wiki/Job_Maseko">Explanation</a>
+      <a id="explainLink" href="https://en.wikipedia.org/wiki/Job_Maseko">Explanation</a>
       <button id="nxtQuestion">Next</button>
     </div>
 
@@ -47,19 +47,12 @@
 
 </div>
 
-<div id="ScoreBoardScreen" >
+<div id="ScoreBoardScreen" class="hidden" >
 <h1>Your Score:</h1>
 <table id="scoreTbl">
 <th class="border">Question: </th>
 <th >Answer: </th>
-<tr class="correct">
-  <td class="border ">What is the plural of Moose?</td>
-  <td>Mooses</td>
-</tr>
-<tr class="incorrect">
-  <td class="border">What is a verb?</td>
-  <td>It is an action word.</td>
-</tr>
+
 </table>
 <h2 id="finalScore"> You scored 3 out of 5</h2>
 </div>
