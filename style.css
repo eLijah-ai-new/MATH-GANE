@@ -72,21 +72,16 @@ h1{
   font-size: 1.5rem;
 }
 
-#ScoreBoardScreen{
-    display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 #scoreTbl{
   font-family: comic;
   border: 1vw solid #1a1c1b;
 color: #A4B465;
 background-color: #3E5F44;
-
- border-collapse: collapse;
-border-spacing: 0;
-   
+border-collapse: collapse;
+border-spacing: 0; 
+width: 98vw;
+justify-self: center;
 }
 
 .border{
@@ -107,6 +102,27 @@ border-spacing: 0;
 
 #finalScore{
   font-family: comic;
+}
+
+.fadeOut{
+    animation: fadeOut 2s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.fadeIn{
+    animation: fadeIn 2s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeOut{
+  from{opacity: 100;}
+  to{opacity: 0;}
+}
+
+@keyframes fadeIn{
+  from{opacity: 0;}
+  to{opacity: 100;}
 }
 
 
